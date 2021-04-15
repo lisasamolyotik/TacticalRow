@@ -27,4 +27,9 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.popBackStack()
         }
     }
+
+    companion object {
+        var isSoundON = true
+        var isVibroON = true
+    }
 }
