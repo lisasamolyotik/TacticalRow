@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tactical Row</string>
+    <string name="rules_content">Play against the computer. Place one of your tokens in ANY slot on the board. Take turns. To win, you need to collect 4 chips in a row (horizontally, vertically or diagonally).</string>
+    <string name="start_button_text">start</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+</resources>

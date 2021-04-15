@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"/>
+
+    <ImageView
+        android:layout_width="357.4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.42dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/buddha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/options_button_dimen"
+        android:layout_height="@dimen/options_button_dimen"
+        android:layout_marginStart="@dimen/options_button_margin"
+        android:layout_marginTop="@dimen/options_button_margin"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="@dimen/options_button_dimen"
+        android:layout_height="@dimen/options_button_dimen"
+        android:layout_marginTop="@dimen/options_button_margin"
+        android:layout_marginEnd="@dimen/options_button_margin"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="141dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/rules_frame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_header"
+        android:layout_width="177.54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/setting_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/frame" />
+
+    <ImageView
+        android:id="@+id/sound_frame"
+        android:layout_width="185.46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sound_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_header" />
+
+    <TextView
+        style="@style/settings_item_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound"
+        app:layout_constraintBottom_toBottomOf="@id/sound_frame"
+        app:layout_constraintEnd_toEndOf="@id/sound_frame"
+        app:layout_constraintStart_toStartOf="@id/sound_frame"
+        app:layout_constraintTop_toTopOf="@id/sound_frame" />
+
+    <ImageButton
+        android:id="@+id/sound_switch"
+        android:layout_width="83.2dp"
+        android:layout_height="38.61dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13.8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/on_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sound_frame" />
+
+    <TextView
+        android:id="@+id/sound_value_text"
+        style="@style/settings_item_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/on"
+        app:layout_constraintBottom_toBottomOf="@id/sound_switch"
+        app:layout_constraintStart_toEndOf="@id/sound_switch"
+        app:layout_constraintTop_toTopOf="@id/sound_switch" />
+
+    <ImageView
+        android:id="@+id/vibration_frame"
+        android:layout_width="185.46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sound_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sound_switch" />
+
+    <TextView
+        style="@style/settings_item_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vibration"
+        app:layout_constraintBottom_toBottomOf="@id/vibration_frame"
+        app:layout_constraintEnd_toEndOf="@id/vibration_frame"
+        app:layout_constraintStart_toStartOf="@id/vibration_frame"
+        app:layout_constraintTop_toTopOf="@id/vibration_frame" />
+
+    <ImageButton
+        android:id="@+id/vibro_switch"
+        android:layout_width="83.2dp"
+        android:layout_height="38.61dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="13dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/on_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vibration_frame" />
+
+    <TextView
+        android:id="@+id/vibro_value_text"
+        style="@style/settings_item_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/on"
+        app:layout_constraintBottom_toBottomOf="@id/vibro_switch"
+        app:layout_constraintStart_toEndOf="@id/vibro_switch"
+        app:layout_constraintTop_toTopOf="@id/vibro_switch" />
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginBottom="43.56dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/save_text"
+        app:layout_constraintBottom_toBottomOf="@id/save_button"
+        app:layout_constraintEnd_toEndOf="@id/save_button"
+        app:layout_constraintStart_toStartOf="@id/save_button"
+        app:layout_constraintTop_toTopOf="@id/save_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
